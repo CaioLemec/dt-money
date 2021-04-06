@@ -72,6 +72,21 @@ const Title = styled.h1 `
 <title>Hello World</title> 
 
 ``` 
+
+> Polished é um pacote que tem funções e helpers para trabalhar com cores.
+
+```yarn add polished ```
+
+Exemplo de uso:
+
+```import {darken} from 'polished'```
+
+``` border-color: ${darken(0.1, '#fff')}; ```
+
+> Nesse exemplo, border-color vai escurecer 10% a cor #FFF.
+
+Documentação: https://github.com/styled-components/polished
+
 <br>
 
 ## Criando front-end sem um back-end :flushed:
@@ -189,6 +204,12 @@ Axios é um cliente HTTP baseado em Promises para fazer requisições. Pode ser 
     }, []);
 ```
 </ol>
+
+## Modal e Forms 
+
+<b>react-modal</b> é uma biblioteca react para construção de modal que trás consigo funcionalidades pré-configuradas de acessibilidade.
+
+> Documentação: https://github.com/reactjs/react-modal
 
 
 

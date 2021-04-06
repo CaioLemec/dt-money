@@ -189,10 +189,3 @@ Axios é um cliente HTTP baseado em Promises para fazer requisições. Pode ser 
     }, []);
 ```
 </ol>
-
-
-
-
-
-
-

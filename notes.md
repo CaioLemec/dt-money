@@ -1,27 +1,3 @@
-## Criando front-end sem um back-end :flushed:
-
-<br> 
-
-<b>Problema</b>: 
-
-Na maioria das vezes, existirá uma API-Rest ou uma API-GraphQL servindo dados para o front-end porém, em alguns casos, podemos nos deparar com situações em que o back-end não estará pronto portanto devemos criar soluções, pois sabemos que consumir uma API é bem diferente de produzir uma aplicação com dados estáticos. 
-
-<br> 
-
-<b>Solução</b>: 
-
-Existem algumas ferramentas que podemos usar no desenvolvimento front-end para simular API’s. Entre elas: 
-
-> Tais ferramentas podem ser utilizadas em ambientes de desenvolvimento e teste, porém em produção o ideal é ter um back-end. 
-
-- Json-server https://www.npmjs.com/package/json-server 
-
-- MirageJs  https://miragejs.com/ 
-
-- Mock Service Work (msw) https://mswjs.io/ 
-
-<br> 
-
 ## Styled Components :art: 
 
 <br> 
@@ -96,3 +72,120 @@ const Title = styled.h1 `
 <title>Hello World</title> 
 
 ``` 
+<br>
+
+## Criando front-end sem um back-end :flushed:
+
+<br> 
+
+<b>Problema</b>: 
+
+Na maioria das vezes, existirá uma API-Rest ou uma API-GraphQL servindo dados para o front-end porém, em alguns casos, podemos nos deparar com situações em que o back-end não estará pronto portanto devemos criar soluções, pois sabemos que consumir uma API é bem diferente de produzir uma aplicação com dados estáticos. 
+
+<br> 
+
+<b>Solução</b>: 
+
+Existem algumas ferramentas que podemos usar no desenvolvimento front-end para simular API’s. Entre elas: 
+
+> Tais ferramentas podem ser utilizadas em ambientes de desenvolvimento e teste, porém em produção o ideal é ter um back-end. 
+
+- Json-server https://www.npmjs.com/package/json-server 
+
+- MirageJs  https://miragejs.com/ 
+
+- Mock Service Work (msw) https://mswjs.io/ 
+
+<br> 
+
+<b>Configurando MirageJS</b>:
+
+```yarn add mirajs -D```
+
+- Realizar o import dentro do component:
+
+``` import { createServer } from 'miragejs' ```
+
+- A partir de um fecth definir rota ficticia:
+
+```  fetch(`https://localhost:3000/api/transactions`) ```
+
+- Chamar a função createServer definindo as rotas e seu retorno. Exemplo:
+
+```bash
+createServer({
+	routes() {
+		this.namespace='api'; 
+		this.get('/transactions', ()=> {
+			return [
+				{
+					id: 1,
+					title: 'transaction1',
+					amount: 400,
+					type: 'deposit'
+				}
+			]
+		})
+	}
+})
+```
+
+> Lendo essa linha de código:
+> chamando a função createServer em /api...
+> quando existir requisição na rota /transactions...
+> retorne o seguinte vetor...
+
+<br>
+
+## Axios, por quê te quero? :smirk:
+
+<b>O que é?</b>?
+
+Axios é um cliente HTTP baseado em Promises para fazer requisições. Pode ser utilizado tanto no navegador quando no Node.js
+
+<b>Por quê usar</b>?
+
+- Intercepta requisições e respostas (request & response);
+
+- Transforma respostas em JSON automaticamente. Adeus: ``` .then(response => response.json()) ```
+
+- Faz requisições http.
+
+- Criação de instâncias.
+
+- Suporte a requisições assíncronas.
+
+<b>Como usar</b>?
+
+<ol>
+<li>Instalação: ```yarn add axios```.</li><br>
+
+<li>Criar pasta com para colocar o axios: ```src/... mkdir services```.</li><br>
+
+<li>Criar e configurar arquivo: ``` /src/services/api.ts ```.</li><br>
+
+> Essa pasta tem o intuito de ser o serviço de dados, todos os lugares onde eu posso buscar dados e enviar dados pode ser alocado nela.
+
+<li>Dentro desse arquivo importar e instanciar o axios:
+
+```bash
+ import axios from `axios`;
+
+ const api = axios.create({
+	 baseURL: `https://localhost:3000/api`,
+ })
+```
+
+> Criar uma instância no Axios: Configurar informações padrões para todas as requisições que vamos fazer.
+
+</li><br>
+
+<li>Ao invés de usar fetch vamos usar a const api criada e utilizar o método get, exemplo:</li>
+
+```bash
+    useEffect (() => {
+        api.get(`/transactions`)
+        .then(response => console.log(response.data))
+    }, []);
+```
+</ol>

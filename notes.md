@@ -1,140 +1,219 @@
-<h1>Titulo ou Arte do Projeto</h1> 
+## Styled Components :art: 
 
-<p align="center">
-  <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
-  <img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=blue&style=for-the-badge&logo=netlify"/>
-  <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
-  <img src="http://img.shields.io/static/v1?label=Ruby&message=2.6.3&color=red&style=for-the-badge&logo=ruby"/>
-  <img src="http://img.shields.io/static/v1?label=Ruby%20On%20Rails%20&message=6.0.2.2&color=red&style=for-the-badge&logo=ruby"/>
-  <img src="http://img.shields.io/static/v1?label=TESTES&message=%3E100&color=GREEN&style=for-the-badge"/>
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
-</p>
+<br> 
 
-> Status do Projeto: :heavy_check_mark: :warning: (concluido, em desenvolvimento, etc)
+<b>Por que usar?</b> 
 
-### Tópicos 
+Em várias bibliotecas do front-end é comum e vantajoso usar uma estratégia onde é possível utilizar o CSS dentro de arquivos Javascript. Essa estratégia é chamada de ``` CSS-in-JS```. 
 
-:small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
+A grande vantagem de usar essa estratégia está na organização. Através desta estratégia é possível criar componentes que são estilizados e diminuir a atribuição de ```classnames=””``` tornando o código mais limpo, escalável e de fácil manutenção. 
 
-:small_blue_diamond: [Funcionalidades](#funcionalidades)
+Styled-components suporta encadeamento de estilos assim como o Sass. :+1: 
 
-:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
+> Em uma aplicação com muita estilização, é essencial utilizar essa estratégia para não se perder nas classes atribuídas no CSS, pois a estilização fica no escopo e se torna mais fácil de manusear e controlar. 
 
-:small_blue_diamond: [Pré-requisitos](#pré-requisitos)
+<br> 
 
-:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
+<b>Como instalar?</b> 
 
-... 
+``` yarn add styled-components ```  
 
-Insira os tópicos do README em links para facilitar a navegação do leitor
+> Biblioteca de CSS-in-JS mais utilizada no mercado atualmente. 
 
-## Descrição do projeto 
+<br> 
 
-<p align="justify">
-  Descrição breve do projeto compondo um paragrafo ou dois. 
-</p>
+<b> Como utilizar? </b> 
 
-## Funcionalidades
+- Primeiro passo será necessário realizar o import dentro do arquivo: 
+```import styled from ‘styled-components``` 
 
-:heavy_check_mark: Funcionalidade 1  
+-Segundo passo é criar um component estilizavel: 
 
-:heavy_check_mark: Funcionalidade 2  
+```const Componente = styled.TAG-HTML`` ``` 
 
-:heavy_check_mark: Funcionalidade 3  
+-Terceiro passo é envolver o componente criado no elemento: 
 
-:heavy_check_mark: Funcionalidade 4  
+```<componente></componente>``` 
+<br> 
 
-## Layout ou Deploy da Aplicação :dash:
+> Exemplo: Colocar color em um title: 
 
-> Link do deploy da aplicação. Exemplo com netlify: https://certificates-for-everyone-womakerscode.netlify.app/
+ 
+```bash
+ 
+const Title = styled.h1 ` 
 
-... 
+	Color: Red; 
 
-Se ainda não houver deploy, insira capturas de tela da aplicação ou gifs
+	Font-size: 16px; 
 
-## Pré-requisitos
+` 
 
-:warning: [Node](https://nodejs.org/en/download/)
+<title>Hello World</title> 
 
-...
+``` 
 
-Liste todas as dependencias e libs que o usuário deve ter instalado na máquina antes de rodar a aplicação 
+> Usarmos template literals no inicio ( `` ) e as chaves ( {} ) no encadeamento. Exemplo:
 
-## Como rodar a aplicação :arrow_forward:
+```bash
+ 
+const Title = styled.h1 ` 
 
-No terminal, clone o projeto: 
+	Color: Red; 
 
+	Font-size: 16px; 
+    
+    button {
+        color: purple;
+    }
+
+` 
+
+<title>Hello World</title> 
+
+``` 
+
+> Polished é um pacote que tem funções e helpers para trabalhar com cores.
+
+```yarn add polished ```
+
+Exemplo de uso:
+
+```import {darken} from 'polished'```
+
+``` border-color: ${darken(0.1, '#fff')}; ```
+
+> Nesse exemplo, border-color vai escurecer 10% a cor #FFF.
+
+Documentação: https://github.com/styled-components/polished
+
+<br>
+
+## Criando front-end sem um back-end :flushed:
+
+<br> 
+
+<b>Problema</b>: 
+
+Na maioria das vezes, existirá uma API-Rest ou uma API-GraphQL servindo dados para o front-end porém, em alguns casos, podemos nos deparar com situações em que o back-end não estará pronto portanto devemos criar soluções, pois sabemos que consumir uma API é bem diferente de produzir uma aplicação com dados estáticos. 
+
+<br> 
+
+<b>Solução</b>: 
+
+Existem algumas ferramentas que podemos usar no desenvolvimento front-end para simular API’s. Entre elas: 
+
+> Tais ferramentas podem ser utilizadas em ambientes de desenvolvimento e teste, porém em produção o ideal é ter um back-end. 
+
+- Json-server https://www.npmjs.com/package/json-server 
+
+- MirageJs  https://miragejs.com/ 
+
+- Mock Service Work (msw) https://mswjs.io/ 
+
+<br> 
+
+<b>Configurando MirageJS</b>:
+
+```yarn add mirajs -D```
+
+- Realizar o import dentro do component:
+
+``` import { createServer } from 'miragejs' ```
+
+- A partir de um fecth definir rota ficticia:
+
+```  fetch(`https://localhost:3000/api/transactions`) ```
+
+- Chamar a função createServer definindo as rotas e seu retorno. Exemplo:
+
+```bash
+createServer({
+	routes() {
+		this.namespace='api'; 
+		this.get('/transactions', ()=> {
+			return [
+				{
+					id: 1,
+					title: 'transaction1',
+					amount: 400,
+					type: 'deposit'
+				}
+			]
+		})
+	}
+})
 ```
-git clone https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator
+
+> Lendo essa linha de código:
+> chamando a função createServer em /api...
+> quando existir requisição na rota /transactions...
+> retorne o seguinte vetor...
+
+<br>
+
+## Axios, por quê te quero? :smirk:
+
+<b>O que é?</b>?
+
+Axios é um cliente HTTP baseado em Promises para fazer requisições. Pode ser utilizado tanto no navegador quando no Node.js
+
+<b>Por quê usar</b>?
+
+- Intercepta requisições e respostas (request & response);
+
+- Transforma respostas em JSON automaticamente. Adeus: ``` .then(response => response.json()) ```
+
+- Faz requisições http.
+
+- Criação de instâncias.
+
+- Suporte a requisições assíncronas.
+
+<b>Como usar</b>?
+
+<ol>
+<li>Instalação: ```yarn add axios```.</li><br>
+
+<li>Criar pasta com para colocar o axios: ```src/... mkdir services```.</li><br>
+
+<li>Criar e configurar arquivo: ``` /src/services/api.ts ```.</li><br>
+
+> Essa pasta tem o intuito de ser o serviço de dados, todos os lugares onde eu posso buscar dados e enviar dados pode ser alocado nela.
+
+<li>Dentro desse arquivo importar e instanciar o axios:
+
+```bash
+ import axios from `axios`;
+
+ const api = axios.create({
+	 baseURL: `https://localhost:3000/api`,
+ })
 ```
 
-... 
+> Criar uma instância no Axios: Configurar informações padrões para todas as requisições que vamos fazer.
 
-Coloque um passo a passo para rodar a sua aplicação. **Dica: clone o próprio projeto e verfique se o passo a passo funciona**
+</li><br>
 
-## Como rodar os testes
+<li>Ao invés de usar fetch vamos usar a const api criada e utilizar o método get, exemplo:</li>
 
-Coloque um passo a passo para executar os testes
-
+```bash
+    useEffect (() => {
+        api.get(`/transactions`)
+        .then(response => console.log(response.data))
+    }, []);
 ```
-$ npm test, rspec, etc 
-```
+</ol>
 
-## Casos de Uso
+## Modal e Forms 
 
-Explique com mais detalhes como a sua aplicação poderia ser utilizada. O uso de **gifs** aqui seria bem interessante. 
+<b>react-modal</b> é uma biblioteca react para construção de modal que trás consigo funcionalidades pré-configuradas de acessibilidade.
 
-Exemplo: Caso a sua aplicação tenha alguma funcionalidade de login apresente neste tópico os dados necessários para acessá-la.
+> Documentação: https://github.com/reactjs/react-modal
 
-## JSON :floppy_disk:
 
-### Usuários: 
 
-|name|email|password|token|avatar|
-| -------- |-------- |-------- |-------- |-------- |
-|Lais Lima|laislima98@hotmail.com|lais123|true|https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS9-U_HbQAipum9lWln3APcBIwng7T46hdBA42EJv8Hf6Z4fDT3&usqp=CAU|
 
-... 
 
-Se quiser, coloque uma amostra do banco de dados 
 
-## Iniciando/Configurando banco de dados
 
-Se for necessário configurar algo antes de iniciar o banco de dados insira os comandos a serem executados 
-
-## Linguagens, dependencias e libs utilizadas :books:
-
-- [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
-- [React PDF](https://react-pdf.org/)
-
-...
-
-Liste as tecnologias utilizadas no projeto que **não** forem reconhecidas pelo Github 
-
-## Resolvendo Problemas :exclamation:
-
-Em [issues]() foram abertos alguns problemas gerados durante o desenvolvimento desse projeto e como foram resolvidos. 
-
-## Tarefas em aberto
-
-Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementadas na sua aplicação
-
-:memo: Tarefa 1 
-
-:memo: Tarefa 2 
-
-:memo: Tarefa 3 
-
-## Desenvolvedores/Contribuintes :octocat:
-
-Liste o time responsável pelo desenvolvimento do projeto
-
-| [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/Diana-ops) |  [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/Diana-ops) |  [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/Diana-ops) |
-| :---: | :---: | :---: 
-
-## Licença 
-
-The [MIT License]() (MIT)
-
-Copyright :copyright: Ano - Titulo do Projeto

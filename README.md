@@ -3,11 +3,11 @@
 </h1>
 
 <p align="center">
-  <a href="#-Projeto"><img src="https://img.shields.io/static/v1?label=&message=PROJETO&color=33CC95&style=for-the-badge&logo=REACT"/></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-Layout"><img src="https://img.shields.io/static/v1?label=&message=LAYOULT&color=33CC95&style=for-the-badge&logo=styled-components"/></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-Technologias"><img src="https://img.shields.io/static/v1?label=&message=TECNOLOGIAS&color=33CC95&style=for-the-badge&logo=visual-studio-code"/></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-Ambiente"><img src="https://img.shields.io/static/v1?label=&message=AMBIENTE&color=33CC95&style=for-the-badge&logo=Yarn"/></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-LICENSE"><img src="https://img.shields.io/static/v1?label=&message=LICENÇA&color=33CC95&style=for-the-badge&logo=docusign"/></a>
+  <a href="#desktop_computer-projeto"><img src="https://img.shields.io/static/v1?label=&message=PROJETO&color=33CC95&style=for-the-badge&logo=REACT"/></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#nail_care-layout"><img src="https://img.shields.io/static/v1?label=&message=LAYOULT&color=33CC95&style=for-the-badge&logo=styled-components"/></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#technologist-tecnologias"><img src="https://img.shields.io/static/v1?label=&message=TECNOLOGIAS&color=33CC95&style=for-the-badge&logo=visual-studio-code"/></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#octocat-ambiente"><img src="https://img.shields.io/static/v1?label=&message=AMBIENTE&color=33CC95&style=for-the-badge&logo=Yarn"/></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#bookmark_tabs-licença"><img src="https://img.shields.io/static/v1?label=&message=LICENSE&color=33CC95&style=for-the-badge&logo=docusign"/></a>
 </p>
 
 <br>
@@ -100,7 +100,6 @@ This project is licensed under the MIT [LICENSE](LICENSE.md).
 <br>
 <hr>
 <p align="center">
-<a href="https://github.com/CaioLemec"><img src="https://img.shields.io/static/v1?label=&message=Developed by Caio Lemec&color=33CC95&style=for-the-badge&logo=GitHub"/>
 <a href="caiolemec@gmail.com"><img src="https://img.shields.io/static/v1?label=&message=E-mail&color=33CC95&style=for-the-badge&logo=Gmail"/>
 <a href="https://br.linkedin.com/in/caio-lemec/"><img src="https://img.shields.io/static/v1?label=&message=LinkedIn&color=33CC95&style=for-the-badge&logo=linkedin"/>
 <br></p>

@@ -211,6 +211,17 @@ Axios é um cliente HTTP baseado em Promises para fazer requisições. Pode ser 
 
 > Documentação: https://github.com/reactjs/react-modal
 
+## Contexto no React 
+
+<b>Contexto no React?</b>
+Contexto nada mais é do que compartilhamento de estado entre vários componentes da aplicação independente de onde esses componentes estejam.
+
+<b>Por quê usar?</b>
+Quando o compartilhamento de estado (pai -> filhos) por props começar a descaracterizar a funcionalidade de um componente ou for algo mais complexa, usaremos o contexto.
+
+
+
+
 
 
 

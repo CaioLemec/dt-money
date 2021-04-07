@@ -7,7 +7,7 @@
   <a href="#-Layout"><img src="https://img.shields.io/static/v1?label=&message=LAYOULT&color=33CC95&style=for-the-badge&logo=styled-components"/></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Technologias"><img src="https://img.shields.io/static/v1?label=&message=TECNOLOGIAS&color=33CC95&style=for-the-badge&logo=visual-studio-code"/></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Ambiente"><img src="https://img.shields.io/static/v1?label=&message=AMBIENTE&color=33CC95&style=for-the-badge&logo=Yarn"/></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#%EF%B8%8F-license"><img src="https://img.shields.io/static/v1?label=&message=LICENÇA&color=33CC95&style=for-the-badge&logo=docusign"/></a>
+  <a href="#-LICENSE"><img src="https://img.shields.io/static/v1?label=&message=LICENÇA&color=33CC95&style=for-the-badge&logo=docusign"/></a>
 </p>
 
 <br>
@@ -19,7 +19,7 @@
 <br>
 <hr>
 
-## :scroll: Projeto
+## :desktop_computer: Projeto
 
 <strong>DTmoney</strong> é uma aplicação web que calcula o fluxo financeiro de um determinado usuário a partir de dados de transações imputados pelo mesmo.
 
@@ -36,7 +36,7 @@ Realizando esta aplicação foi possível praticar e compreender conceitos impor
 <br>
 <hr>
 
-## 🎨 Layout
+## :nail_care: Layout
 <p align="center">
 <img src="./src/assets/" width="70%" height="70%" />
 </p>
@@ -48,7 +48,7 @@ Layoult desenvolvido pelo [@TiagoLuchtenberg](https://www.instagram.com/tiagoluc
 <br>
 <hr>
 
-## 🔨 Tecnologias
+## :technologist: Tecnologias
 
 - [React](https://pt-br.reactjs.org/)
 - [Babel](https://babeljs.io/)
@@ -63,7 +63,7 @@ Layoult desenvolvido pelo [@TiagoLuchtenberg](https://www.instagram.com/tiagoluc
 <br>
 <hr>
 
-## 📝 Ambiente
+## :octocat: Ambiente
 
 1. Clonar o repositório:
 
@@ -91,7 +91,7 @@ http://localhost:3000/
 <br>
 <hr>
 
-## ⚖️ Licença
+## :bookmark_tabs: Licença
 
 <br>
 

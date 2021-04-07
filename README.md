@@ -95,7 +95,7 @@ http://localhost:3000/
 
 <br>
 
-This project is licensed under the MIT [LICENSE](LICENSE.md).
+This project is licensed under the MIT [LICENSE](LICENSE).
 
 <br>
 <hr>

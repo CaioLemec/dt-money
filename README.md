@@ -3,10 +3,10 @@
 </h1>
 
 <p align="center">
-  <a href="#-Project"><img src="https://img.shields.io/static/v1?label=&message=PROJETO&color=33CC95&style=for-the-badge&logo=REACT"/></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Projeto"><img src="https://img.shields.io/static/v1?label=&message=PROJETO&color=33CC95&style=for-the-badge&logo=REACT"/></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Layout"><img src="https://img.shields.io/static/v1?label=&message=LAYOULT&color=33CC95&style=for-the-badge&logo=styled-components"/></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-Technology"><img src="https://img.shields.io/static/v1?label=&message=TECNOLOGIAS&color=33CC95&style=for-the-badge&logo=visual-studio-code"/></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-Environment"><img src="https://img.shields.io/static/v1?label=&message=AMBIENTE&color=33CC95&style=for-the-badge&logo=Yarn"/></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Technologias"><img src="https://img.shields.io/static/v1?label=&message=TECNOLOGIAS&color=33CC95&style=for-the-badge&logo=visual-studio-code"/></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Ambiente"><img src="https://img.shields.io/static/v1?label=&message=AMBIENTE&color=33CC95&style=for-the-badge&logo=Yarn"/></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#%EF%B8%8F-license"><img src="https://img.shields.io/static/v1?label=&message=LICENÇA&color=33CC95&style=for-the-badge&logo=docusign"/></a>
 </p>
 
@@ -19,7 +19,7 @@
 <br>
 <hr>
 
-## 💻 Projeto
+## :scroll: Projeto
 
 <strong>DTmoney</strong> é uma aplicação web que calcula o fluxo financeiro de um determinado usuário a partir de dados de transações imputados pelo mesmo.
 

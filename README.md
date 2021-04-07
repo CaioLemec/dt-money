@@ -38,7 +38,7 @@ Realizando esta aplicação foi possível praticar e compreender conceitos impor
 
 ## :nail_care: Layout
 <p align="center">
-<img src="./src/assets/" width="70%" height="70%" />
+<img src="./src/assets/DTmoney.gif" width="70%" height="70%" />
 </p>
 
 Você pode verificar o layoult completo clicando em: <a href="https://www.figma.com/file/0xmu9mj2TJYoIOubBFWsk5/dtmoney-Ignite-(Copy)?node-id=0%3A1">FIGMA</a>.

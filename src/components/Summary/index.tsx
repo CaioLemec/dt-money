@@ -29,7 +29,7 @@ export function Summary () {
                     <p>Entradas</p>
                     <img src={incomeImg} alt="Entradas" />
                 </header>
-                <strong>
+                <strong>+
                 {new Intl.NumberFormat('pt-BR',{
                     style: 'currency',
                     currency: 'BRL'

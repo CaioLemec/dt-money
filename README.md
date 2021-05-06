@@ -95,12 +95,19 @@ http://localhost:3000/
 
 <br>
 
-Projeto licenciado por MIT [LICENSE](LICENSE).
+Projeto licenciado por MIT [LICENSE](./LICENSE).
 
 <br>
 <hr>
-<p align="center">
-<a href="caiolemec@gmail.com"><img src="https://img.shields.io/static/v1?label=&message=E-mail&color=33CC95&style=for-the-badge&logo=Gmail"/>
-<a href="https://br.linkedin.com/in/caio-lemec/"><img src="https://img.shields.io/static/v1?label=&message=LinkedIn&color=33CC95&style=for-the-badge&logo=linkedin"/>
-<br></p>
+<br>
+
+Fico à disposição para qualquer esclarecimento.
+
+<img style="border-radius: 30%;" src="https://avatars3.githubusercontent.com/u/59886891?s=460&v=4" width="75px;"/>
+<h3>Caio Lemec<h3>
+<a href="https://t.me/caiolemec"><img src="https://img.shields.io/badge/Telegram-33CC95?style=for-the-badge&logo=telegram&logoColor=white"/>
+<a href="mailto:caiolemec@gmail.com"><img src="https://img.shields.io/static/v1?label=&message=E-mail&color=33CC95&style=for-the-badge&logo=Gmail"/>
+<a href="https://www.linkedin.com/in/caiolemec/"><img src="https://img.shields.io/static/v1?label=&message=LinkedIn&color=33CC95&style=for-the-badge&logo=linkedin"/>
+<br>
+</p>
 
